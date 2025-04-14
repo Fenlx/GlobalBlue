@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -14,3 +14,4 @@
 /.vs/GlobalBlue/FileContentIndex
 /.vs/GlobalBlue/v17
 /Client/GlobalBlue.Client/bin/Debug/net8.0
+.vs/GlobalBlue/config/applicationhost.config
