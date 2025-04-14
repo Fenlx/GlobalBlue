@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import 'ngx-toastr/toastr';
+@import 'variables.scss';
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    --primary-color: #3385cc;
+  --primary-lighter-color: #c2daf0;
+  --primary-darker-color: #2068b9;
+  --text-primary-color: #ffffff;
+  --text-primary-lighter-color: rgba(0, 0, 0, 0.87);
+  --text-primary-darker-color: #ffffff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.bg-lightBlue-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(12, 74, 110, var(--tw-bg-opacity));
+}
+
+.bg-lightBlue-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(7, 89, 133, var(--tw-bg-opacity));
+}
+
+.bg-lightBlue-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(3, 105, 161, var(--tw-bg-opacity));
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #3385cc;
+}
+
+.mat-progress-spinner.mat-accent circle,
+.mat-spinner.mat-accent circle {
+  stroke: #797979;
+}
+
+.mat-progress-spinner.mat-warn circle,
+.mat-spinner.mat-warn circle {
+  stroke: #ff4800;
+}
+
+.mat-toolbar {
+    background: #ededed;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .mat-toolbar.mat-primary {
+    background: #3385cc;
+    color: white;
+  }
+  
+  .mat-toolbar.mat-accent {
+    background: #797979;
+    color: white;
+  }
+  
+  .mat-toolbar.mat-warn {
+    background: #ff4800;
+    color: white;
+  }
+  
+  .mat-toolbar .mat-form-field-underline,
+  .mat-toolbar .mat-form-field-ripple,
+  .mat-toolbar .mat-focused .mat-form-field-ripple {
+    background-color: currentColor;
+  }
+  
+  .mat-toolbar .mat-form-field-label,
+  .mat-toolbar .mat-focused .mat-form-field-label,
+  .mat-toolbar .mat-select-value,
+  .mat-toolbar .mat-select-arrow,
+  .mat-toolbar .mat-form-field.mat-focused .mat-select-arrow {
+    color: inherit;
+  }
+  
+  .mat-toolbar .mat-input-element {
+    caret-color: currentColor;
+  }
+  
+  .mat-toolbar-multiple-rows {
+    min-height: 64px;
+  }
+  
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    height: 64px;
+  }
+  
+  @media (max-width: 599px) {
+    .mat-toolbar-multiple-rows {
+      min-height: 56px;
+    }
+  
+    .mat-toolbar-row,
+    .mat-toolbar-single-row {
+      height: 56px;
+    }
+  }
