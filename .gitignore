@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Application/GlobalBlue.WebApi/bin/Debug/net8.0
+/Application/GlobalBlue.WebApi/obj
+/Application/GlobalBlue.WebApp/.vscode
+/Application/GlobalBlue.WebApp/obj/Debug
+/Client/GlobalBlue.Client/obj
+/Services/GlobalBlue.Services/bin/Debug/net8.0
+/Services/GlobalBlue.Services/obj
+/Services/GlobalBlue.Services.Contracts/bin/Debug/net8.0
+/Services/GlobalBlue.Services.Contracts/obj
+/.vs/GlobalBlue/FileContentIndex
+/.vs/GlobalBlue/v17
+/Client/GlobalBlue.Client/bin/Debug/net8.0
