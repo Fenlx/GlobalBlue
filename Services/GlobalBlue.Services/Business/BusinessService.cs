@@ -96,32 +96,14 @@ namespace GlobalBlue.Services.Business
         private decimal GetVatRate(VATRequest vatRequest)
         {
             var vatRate = vatRequest.VatRate.Replace("%", string.Empty);
-            var usRateValue = ParseStringToValue(vatRate);
-            var ptRateValue = ParseStringToValue(vatRate);
-            if (usRateValue > 0)
-            {
-                return usRateValue;
-            } 
-            else
-            {
-                return ptRateValue;
-            }
+            var rateValue = ParseStringToValue(vatRate);
+            return rateValue;
         }
 
         private decimal ParseStringToValue(string initialValue)
         {
-            var ptCulture = new CultureInfo("pt-PT");
-            var usCulture = new CultureInfo("en-US");
-            decimal.TryParse(initialValue, usCulture, out decimal usRateValue);
-            decimal.TryParse(initialValue, ptCulture, out decimal ptRateValue);
-            if (usRateValue > 0)
-            {
-                return usRateValue;
-            }
-            else
-            {
-                return ptRateValue;
-            }
+            decimal.TryParse(initialValue, CultureInfo.CurrentCulture, out decimal value);
+            return value;
         }
 
         private string DecimalToString(decimal value)
